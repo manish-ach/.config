@@ -1,0 +1,12 @@
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+auto-format = true
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
